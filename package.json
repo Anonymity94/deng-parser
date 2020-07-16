@@ -1,0 +1,16 @@
+{
+  "name": "parser",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node_modules/pegjs/bin/pegjs --format globals --export-var parser -o lib/parser.js lib/parser.pegjs"
+  },
+  "keywords": [
+    "pegjs",
+    "parser"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "pegjs": "^0.10.0"
+  }
+}
