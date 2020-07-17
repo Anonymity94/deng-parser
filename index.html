@@ -18,7 +18,13 @@
       var errorDom = document.getElementById("error");
 
       textareaDom.addEventListener("input", function(e) {
-        var value = this.value;
+        var value = this.value || '';
+
+        // ajax 取占位符实际的值 
+        // 替换占位符
+        value = value.replace(/\<CV\>/g, 6)
+        value = value.replace(/\<UV\>/g, 7)
+        // 其他更多的占位符...
 
         try {
           var result = arithmetics.parse(value)
