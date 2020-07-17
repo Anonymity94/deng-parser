@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <script src="./lib/parser.js"></script>
+    <script src="./lib/arithmetics.js"></script>
   </head>
   <body>
-    <textarea id="input"> </textarea>
+    <textarea style="width: 400px;" id="input" rows="6"> </textarea>
 
     <div id="result"></div>
     <div id="error"></div>
@@ -21,7 +21,7 @@
         var value = this.value;
 
         try {
-          var result = parser.parse(value)
+          var result = arithmetics.parse(value)
           resultDom.innerText = result
           errorDom.innerText = '';
         } catch (error) {

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/pegjs/bin/pegjs --format globals --export-var parser -o lib/parser.js lib/parser.pegjs"
+    "build": "node_modules/pegjs/bin/pegjs --format globals --export-var arithmetics -o lib/arithmetics.js lib/arithmetics.pegjs"
   },
   "keywords": [
     "pegjs",
